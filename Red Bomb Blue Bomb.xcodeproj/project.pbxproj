@@ -14,6 +14,7 @@
 		27AB3B6A1C5BEFC7003E894C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AB3B681C5BEFC7003E894C /* LaunchScreen.storyboard */; };
 		27AB3B751C5BEFC7003E894C /* Red_Bomb_Blue_BombTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB3B741C5BEFC7003E894C /* Red_Bomb_Blue_BombTests.swift */; };
 		27AB3B801C5BEFC7003E894C /* Red_Bomb_Blue_BombUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB3B7F1C5BEFC7003E894C /* Red_Bomb_Blue_BombUITests.swift */; };
+		27B3C8F91C5C24C400CCC050 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B3C8F81C5C24C400CCC050 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		27AB3B7B1C5BEFC7003E894C /* Red Bomb Blue BombUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Red Bomb Blue BombUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AB3B7F1C5BEFC7003E894C /* Red_Bomb_Blue_BombUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red_Bomb_Blue_BombUITests.swift; sourceTree = "<group>"; };
 		27AB3B811C5BEFC7003E894C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B3C8F81C5C24C400CCC050 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				27AB3B661C5BEFC7003E894C /* Assets.xcassets */,
 				27AB3B681C5BEFC7003E894C /* LaunchScreen.storyboard */,
 				27AB3B6B1C5BEFC7003E894C /* Info.plist */,
+				27B3C8F81C5C24C400CCC050 /* Images.xcassets */,
 			);
 			path = "Red Bomb Blue Bomb";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27AB3B6A1C5BEFC7003E894C /* LaunchScreen.storyboard in Resources */,
+				27B3C8F91C5C24C400CCC050 /* Images.xcassets in Resources */,
 				27AB3B671C5BEFC7003E894C /* Assets.xcassets in Resources */,
 				27AB3B651C5BEFC7003E894C /* Main.storyboard in Resources */,
 			);
@@ -400,10 +404,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Red Bomb Blue Bomb/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mikestreff.Red-Bomb-Blue-Bomb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,10 +417,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Red Bomb Blue Bomb/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mikestreff.Red-Bomb-Blue-Bomb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -485,6 +493,7 @@
 				27AB3B861C5BEFC7003E894C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27AB3B871C5BEFC7003E894C /* Build configuration list for PBXNativeTarget "Red Bomb Blue BombTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				27AB3B891C5BEFC7003E894C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27AB3B8A1C5BEFC7003E894C /* Build configuration list for PBXNativeTarget "Red Bomb Blue BombUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				27AB3B8C1C5BEFC7003E894C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

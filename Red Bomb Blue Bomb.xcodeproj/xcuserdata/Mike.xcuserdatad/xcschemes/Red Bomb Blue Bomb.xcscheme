@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "27AB3B5B1C5BEFC7003E894C"
+               BuildableName = "Red Bomb Blue Bomb.app"
+               BlueprintName = "Red Bomb Blue Bomb"
+               ReferencedContainer = "container:Red Bomb Blue Bomb.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,12 +28,41 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "27AB3B6F1C5BEFC7003E894C"
+               BuildableName = "Red Bomb Blue BombTests.xctest"
+               BlueprintName = "Red Bomb Blue BombTests"
+               ReferencedContainer = "container:Red Bomb Blue Bomb.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "27AB3B7A1C5BEFC7003E894C"
+               BuildableName = "Red Bomb Blue BombUITests.xctest"
+               BlueprintName = "Red Bomb Blue BombUITests"
+               ReferencedContainer = "container:Red Bomb Blue Bomb.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "27AB3B5B1C5BEFC7003E894C"
+            BuildableName = "Red Bomb Blue Bomb.app"
+            BlueprintName = "Red Bomb Blue Bomb"
+            ReferencedContainer = "container:Red Bomb Blue Bomb.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "27AB3B5B1C5BEFC7003E894C"
+            BuildableName = "Red Bomb Blue Bomb.app"
+            BlueprintName = "Red Bomb Blue Bomb"
+            ReferencedContainer = "container:Red Bomb Blue Bomb.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "27AB3B5B1C5BEFC7003E894C"
+            BuildableName = "Red Bomb Blue Bomb.app"
+            BlueprintName = "Red Bomb Blue Bomb"
+            ReferencedContainer = "container:Red Bomb Blue Bomb.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

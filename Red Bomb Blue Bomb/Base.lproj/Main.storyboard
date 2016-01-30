@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Red_Bomb_Blue_Bomb" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-4U-BFT">
+                                <rect key="frame" x="179" y="304" width="124" height="30"/>
+                                <state key="normal" title="Hide Red Bomb">
+                                    <color key="titleColor" red="1" green="0.20873992926888474" blue="0.19706758114560441" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HideRedBombButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="288-F1-QVQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-hf-UEh">
+                                <rect key="frame" x="20" y="304" width="120" height="30"/>
+                                <state key="normal" title="Hide Blue Bomb"/>
+                                <connections>
+                                    <action selector="HideBlueBombButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlW-OA-gyN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue bomb" translatesAutoresizingMaskIntoConstraints="NO" id="my1-9O-c3m">
+                                <rect key="frame" x="-21" y="67" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red bomb" translatesAutoresizingMaskIntoConstraints="NO" id="LZ5-Hj-B6N">
+                                <rect key="frame" x="121" y="67" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-8z-8U2">
+                                <rect key="frame" x="165" y="383" width="150" height="30"/>
+                                <state key="normal" title="Appear Red Bomb">
+                                    <color key="titleColor" red="1" green="0.17556798279999999" blue="0.2184262149" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AppearRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05w-wD-oQ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXn-sG-itw">
+                                <rect key="frame" x="10" y="383" width="140" height="30"/>
+                                <state key="normal" title="Appear Blue Bomb"/>
+                                <connections>
+                                    <action selector="AppearBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="41M-E3-vFj"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom Explosion" translatesAutoresizingMaskIntoConstraints="NO" id="fq4-d6-0Eg">
+                                <rect key="frame" x="0.0" y="79" width="172" height="116"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom Explosion" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-zK-YO7">
+                                <rect key="frame" x="165" y="74" width="155" height="121"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN3-S9-Khp">
+                                <rect key="frame" x="7" y="451" width="159" height="30"/>
+                                <state key="normal" title="Explode Blue Bomb"/>
+                                <connections>
+                                    <action selector="ExplodeBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="731-Ih-BlS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzq-xE-paA">
+                                <rect key="frame" x="158" y="451" width="145" height="30"/>
+                                <state key="normal" title="Explode Red Bomb">
+                                    <color key="titleColor" red="1" green="0.17556798279999999" blue="0.2184262149" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ExplodeRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwl-0H-t4i"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="BlueBombPic" destination="my1-9O-c3m" id="7Nw-c4-pdp"/>
+                        <outlet property="ExplodeBlue" destination="fq4-d6-0Eg" id="C1l-Pg-Nm0"/>
+                        <outlet property="ExplodeRed" destination="Efc-zK-YO7" id="3w9-kB-TvS"/>
+                        <outlet property="HideBlueBomb" destination="Ph0-hf-UEh" id="6fy-F4-ygo"/>
+                        <outlet property="HideRedBomb" destination="QAP-4U-BFT" id="cY5-5y-X12"/>
+                        <outlet property="RedBombPic" destination="LZ5-Hj-B6N" id="A16-1y-aUD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-35" y="278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Boom Explosion" width="1300" height="867"/>
+        <image name="blue bomb" width="90" height="90"/>
+        <image name="red bomb" width="400" height="400"/>
+    </resources>
 </document>
